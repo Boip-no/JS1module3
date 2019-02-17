@@ -6,7 +6,7 @@
 video = [{"id" : 12312412312, "name" : "Ecuaciones Diferenciales", "url" : "/video/math/edo/12312412312", "author" :
 { data : [{"name_author" : "Alejandro Morales", "url" : "/author/alejandro-morales", "type" : "master" }] } }];
 
-for(var key in video) {
+for(key in video) {
   console.log(video[key].id);
   console.log(video[key].name);
   console.log(video[key].url);
@@ -14,8 +14,8 @@ for(var key in video) {
   var authorData = video[key].author.data;
 
   for(var dataKey in authorData){
-        console.log(authorData[dataKey].name_author);
-        console.log(authorData[dataKey].url);
-        console.log(authorData[dataKey].type);
+    console.log(authorData[dataKey].name_author);
+    console.log(authorData[dataKey].url);
+    console.log(authorData[dataKey].type);
   }
 }
